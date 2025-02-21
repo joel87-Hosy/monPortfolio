@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Frontend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#work">Mes compétences</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>À propos</h2>
+        <img src="IMG_6719.JPG" alt="Ma photo">
+        <p>Je suis un développeur web frontend passionné par la création d'interfaces modernes et dynamiques.</p>
+    </section> 
+    <section id="work">
+        <h2>Mes Compétences</h2>
+        <ul>
+            <li>Développeur Frontend</li>
+            <li>Développeur d'Application Web</li>
+            <li>Réaction et Création de Contenu</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="project">
+            <h3>Portfolio</h3>
+            <p class="para">Développement d'un site web pour présenter mon parcour, mes compétences et projets</p>
+        </div>
+        <div class="project">
+            <h3>Site e-commerce</h3>
+            <p class="para">Création d'un Site Vitrine pour la promotion d'un Article cosmétique.
+                Création d'un Site Boutique pour une marque de vêtement et autres articles
+            </p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Mon Portfolio</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
