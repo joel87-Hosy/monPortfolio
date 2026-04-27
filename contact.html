@@ -26,6 +26,7 @@
             <li><a href="skills.html" class="nav-link">Compétences</a></li>
             <li><a href="projects.html" class="nav-link">Projets</a></li>
             <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            <li><a href="cv.html" class="nav-link">Mon CV</a></li>
         </ul>
     </nav>
 
@@ -50,37 +51,37 @@
                     <h3 style="color:#fff; font-size:1.3rem; margin-bottom:24px;">Informations de contact</h3>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>votre@email.com</span>
+                        <span>oseepohonin07@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>France</span>
+                        <span>Côte d'Ivoire</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <span>Disponible du lundi au vendredi</span>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/joel87-Hosy" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/joël-osée-pohonin-b0944133a" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                <form class="contact-form reveal" id="contact-form">
+                <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/mqewornj" method="POST">
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Votre nom" required>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
                         <label for="name">Nom</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Votre email" required>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
                         <label for="email">Email</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" placeholder="Sujet">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet">
                         <label for="subject">Sujet</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" placeholder="Votre message" rows="6" required></textarea>
+                        <textarea id="message" name="message" placeholder="Votre message" rows="6" required></textarea>
                         <label for="message">Message</label>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
@@ -99,6 +100,33 @@
             <p>&copy; 2026 Mon Portfolio — Tous droits réservés</p>
         </div>
     </footer>
+
+    <!-- AI Chat Widget -->
+    <button class="ai-chat-btn" id="ai-chat-btn" aria-label="Assistant IA">
+        <i class="fas fa-robot"></i>
+        <span class="ai-badge">IA</span>
+    </button>
+    <div class="ai-chat-panel" id="ai-chat-panel">
+        <div class="ai-chat-header">
+            <div class="ai-avatar"><i class="fas fa-robot"></i></div>
+            <div class="ai-info">
+                <h4>Assistant IA</h4>
+                <span>En ligne</span>
+            </div>
+            <button class="ai-close-btn" id="ai-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages"></div>
+        <div class="ai-suggestions">
+            <button class="ai-suggestion-btn">Compétences</button>
+            <button class="ai-suggestion-btn">Projets</button>
+            <button class="ai-suggestion-btn">Me contacter</button>
+            <button class="ai-suggestion-btn">Voir le CV</button>
+        </div>
+        <div class="ai-chat-input-area">
+            <input type="text" class="ai-chat-input" id="ai-chat-input" placeholder="Posez votre question...">
+            <button class="ai-send-btn" id="ai-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

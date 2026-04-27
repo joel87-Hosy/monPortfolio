@@ -26,6 +26,7 @@
             <li><a href="skills.html" class="nav-link">Compétences</a></li>
             <li><a href="projects.html" class="nav-link active">Projets</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="cv.html" class="nav-link">Mon CV</a></li>
         </ul>
     </nav>
 
@@ -51,44 +52,44 @@
             </div>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-user-circle"></i></div>
+                    <div class="project-icon"><i class="fas fa-globe"></i></div>
                     <div class="project-body">
-                        <h3>Portfolio Personnel</h3>
-                        <p>Développement d'un site web pour présenter mon parcours, mes compétences et mes projets. Design moderne et responsive.</p>
+                        <h3>Site Web</h3>
+                        <p>Conception et développement d'un site web complet, avec un design moderne, responsive et une expérience utilisateur soignée.</p>
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JavaScript</span>
                         </div>
                     </div>
                     <div class="project-footer">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                        <a href="https://www.ivoiretechnocom.ci" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
                         <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-icon"><i class="fas fa-store"></i></div>
                     <div class="project-body">
-                        <h3>Site E-commerce Cosmétique</h3>
-                        <p>Création d'un site vitrine pour la promotion d'un article cosmétique avec une interface attrayante et moderne.</p>
+                        <h3>Site E-commerce</h3>
+                        <p>Création d'un site de Mode avec boutique en ligne moderne et dynamique.</p>
                         <div class="project-tags">
                             <span>E-commerce</span><span>UI/UX</span><span>Responsive</span>
                         </div>
                     </div>
                     <div class="project-footer">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                        <a href="https://joel87-hosy.github.io/site-JEMER/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
                         <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
                     <div class="project-body">
-                        <h3>Boutique en ligne Mode</h3>
-                        <p>Développement d'une boutique en ligne pour une marque de vêtements avec catalogue produits et panier.</p>
+                        <h3>Application Web Moderne</h3>
+                        <p>Développement d'une application web full-stack moderne avec interface dynamique, authentification et API REST.</p>
                         <div class="project-tags">
-                            <span>Boutique</span><span>CSS Grid</span><span>JavaScript</span>
+                            <span>React</span><span>Node.js</span><span>REST API</span>
                         </div>
                     </div>
                     <div class="project-footer">
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
+                        <a href="https://joel87-hosy.github.io/application-suivie-materiels-itc/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Voir le projet</a>
                         <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
                     </div>
                 </div>
@@ -114,6 +115,33 @@
             <p>&copy; 2026 Mon Portfolio — Tous droits réservés</p>
         </div>
     </footer>
+
+    <!-- AI Chat Widget -->
+    <button class="ai-chat-btn" id="ai-chat-btn" aria-label="Assistant IA">
+        <i class="fas fa-robot"></i>
+        <span class="ai-badge">IA</span>
+    </button>
+    <div class="ai-chat-panel" id="ai-chat-panel">
+        <div class="ai-chat-header">
+            <div class="ai-avatar"><i class="fas fa-robot"></i></div>
+            <div class="ai-info">
+                <h4>Assistant IA</h4>
+                <span>En ligne</span>
+            </div>
+            <button class="ai-close-btn" id="ai-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages"></div>
+        <div class="ai-suggestions">
+            <button class="ai-suggestion-btn">Compétences</button>
+            <button class="ai-suggestion-btn">Projets</button>
+            <button class="ai-suggestion-btn">Me contacter</button>
+            <button class="ai-suggestion-btn">Voir le CV</button>
+        </div>
+        <div class="ai-chat-input-area">
+            <input type="text" class="ai-chat-input" id="ai-chat-input" placeholder="Posez votre question...">
+            <button class="ai-send-btn" id="ai-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

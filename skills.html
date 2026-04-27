@@ -26,6 +26,7 @@
             <li><a href="skills.html" class="nav-link active">Compétences</a></li>
             <li><a href="projects.html" class="nav-link">Projets</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="cv.html" class="nav-link">Mon CV</a></li>
         </ul>
     </nav>
 
@@ -96,8 +97,22 @@
                     <p>Optimisation des performances pour des sites rapides et bien référencés.</p>
                     <div class="skill-tags">
                         <span>SEO</span><span>Lighthouse</span><span>Optimisation</span>
+                    </div>                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Développement Backend</h3>
+                    <p>Conception d'API robustes et gestion de bases de données pour des applications full-stack.</p>
+                    <div class="skill-tags">
+                        <span>Node.js</span><span>Python</span><span>SQL</span><span>REST API</span>
                     </div>
                 </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Développement de modèles de machine learning et intégration de solutions IA dans des applications.</p>
+                    <div class="skill-tags">
+                        <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>LLM</span>
+                    </div>                </div>
             </div>
         </div>
     </section>
@@ -145,6 +160,34 @@
                     </div>
                     <div class="progress-bar"><div class="progress-fill" style="--pct: 75%"></div></div>
                 </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="progress-pct">72%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 72%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fab fa-python"></i> Python</span>
+                        <span class="progress-pct">78%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 78%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fas fa-database"></i> SQL</span>
+                        <span class="progress-pct">68%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 68%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fas fa-brain"></i> Machine Learning</span>
+                        <span class="progress-pct">65%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 65%"></div></div>
+                </div>
             </div>
         </div>
     </section>
@@ -156,6 +199,33 @@
             <p>&copy; 2026 Mon Portfolio — Tous droits réservés</p>
         </div>
     </footer>
+
+    <!-- AI Chat Widget -->
+    <button class="ai-chat-btn" id="ai-chat-btn" aria-label="Assistant IA">
+        <i class="fas fa-robot"></i>
+        <span class="ai-badge">IA</span>
+    </button>
+    <div class="ai-chat-panel" id="ai-chat-panel">
+        <div class="ai-chat-header">
+            <div class="ai-avatar"><i class="fas fa-robot"></i></div>
+            <div class="ai-info">
+                <h4>Assistant IA</h4>
+                <span>En ligne</span>
+            </div>
+            <button class="ai-close-btn" id="ai-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages"></div>
+        <div class="ai-suggestions">
+            <button class="ai-suggestion-btn">Compétences</button>
+            <button class="ai-suggestion-btn">Projets</button>
+            <button class="ai-suggestion-btn">Me contacter</button>
+            <button class="ai-suggestion-btn">Voir le CV</button>
+        </div>
+        <div class="ai-chat-input-area">
+            <input type="text" class="ai-chat-input" id="ai-chat-input" placeholder="Posez votre question...">
+            <button class="ai-send-btn" id="ai-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

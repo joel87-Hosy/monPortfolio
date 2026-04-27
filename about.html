@@ -26,6 +26,7 @@
             <li><a href="skills.html" class="nav-link">Compétences</a></li>
             <li><a href="projects.html" class="nav-link">Projets</a></li>
             <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <li><a href="cv.html" class="nav-link">Mon CV</a></li>
         </ul>
     </nav>
 
@@ -47,12 +48,12 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-img-wrapper reveal">
-                    <img src="IMG_6719.JPG" alt="Photo de profil" class="about-img">
+                    <img src="mon-image.jpeg" alt="Photo de profil" class="about-img">
                     <div class="about-img-decoration"></div>
                 </div>
                 <div class="about-text reveal">
-                    <h3>Développeur Frontend passionné</h3>
-                    <p>Je suis un développeur web frontend passionné par la création d'interfaces modernes et dynamiques. Je conçois des expériences utilisateur intuitives et des sites web qui allient esthétique et performance.</p>
+                    <h3>Développeur Frontend et Backend passionné</h3>
+                    <p>Je suis un développeur web frontend et backend passionné par la création d'interfaces modernes et dynamiques. Je conçois des expériences utilisateur intuitives et des sites web qui allient esthétique et performance.</p>
                     <p style="margin-top: -16px;">Toujours à l'affût des nouvelles tendances du web, j'aime combiner créativité et rigueur technique pour livrer des produits de qualité.</p>
                     <div class="about-stats">
                         <div class="stat">
@@ -86,7 +87,7 @@
                     <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2024 — Présent</span>
-                        <h3>Développeur Frontend</h3>
+                        <h3>Développeur Full-Stack</h3>
                         <p>Conception et développement d'interfaces web modernes, performantes et responsives pour divers clients.</p>
                     </div>
                 </div>
@@ -117,6 +118,33 @@
             <p>&copy; 2026 Mon Portfolio — Tous droits réservés</p>
         </div>
     </footer>
+
+    <!-- AI Chat Widget -->
+    <button class="ai-chat-btn" id="ai-chat-btn" aria-label="Assistant IA">
+        <i class="fas fa-robot"></i>
+        <span class="ai-badge">IA</span>
+    </button>
+    <div class="ai-chat-panel" id="ai-chat-panel">
+        <div class="ai-chat-header">
+            <div class="ai-avatar"><i class="fas fa-robot"></i></div>
+            <div class="ai-info">
+                <h4>Assistant IA</h4>
+                <span>En ligne</span>
+            </div>
+            <button class="ai-close-btn" id="ai-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="ai-chat-messages" id="ai-chat-messages"></div>
+        <div class="ai-suggestions">
+            <button class="ai-suggestion-btn">Compétences</button>
+            <button class="ai-suggestion-btn">Projets</button>
+            <button class="ai-suggestion-btn">Me contacter</button>
+            <button class="ai-suggestion-btn">Voir le CV</button>
+        </div>
+        <div class="ai-chat-input-area">
+            <input type="text" class="ai-chat-input" id="ai-chat-input" placeholder="Posez votre question...">
+            <button class="ai-send-btn" id="ai-send-btn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
