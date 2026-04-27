@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences — Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-brand">
+            <a href="index.html"><span class="brand-dot">&lt;</span>Dev<span class="brand-dot">/&gt;</span></a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="about.html" class="nav-link">À propos</a></li>
+            <li><a href="skills.html" class="nav-link active">Compétences</a></li>
+            <li><a href="projects.html" class="nav-link">Projets</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag">Ce que je maîtrise</span>
+            <h1 class="page-hero-title">Mes <span class="highlight">Compétences</span></h1>
+            <p class="page-hero-sub">Un aperçu des technologies et outils que j'utilise au quotidien.</p>
+        </div>
+        <div class="hero-bg">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+    </section>
+
+    <!-- Skills Cards -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Savoir-faire</span>
+                <h2 class="section-title">Domaines d'expertise</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Développement Frontend</h3>
+                    <p>Création d'interfaces modernes et responsives avec HTML, CSS et JavaScript.</p>
+                    <div class="skill-tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Application Web</h3>
+                    <p>Développement d'applications web dynamiques et interactives.</p>
+                    <div class="skill-tags">
+                        <span>React</span><span>API REST</span><span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Création de Contenu</h3>
+                    <p>Conception visuelle et création de contenu engageant pour le web.</p>
+                    <div class="skill-tags">
+                        <span>UI/UX</span><span>Design</span><span>Figma</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Développement adapté à tous les écrans : mobile, tablette, desktop.</p>
+                    <div class="skill-tags">
+                        <span>Flexbox</span><span>Grid</span><span>Media Queries</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Outils & Workflow</h3>
+                    <p>Maîtrise des outils modernes pour un développement efficace et collaboratif.</p>
+                    <div class="skill-tags">
+                        <span>Git</span><span>VS Code</span><span>npm</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Performance Web</h3>
+                    <p>Optimisation des performances pour des sites rapides et bien référencés.</p>
+                    <div class="skill-tags">
+                        <span>SEO</span><span>Lighthouse</span><span>Optimisation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Bars Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Niveau technique</span>
+                <h2 class="section-title">Maîtrise des technologies</h2>
+            </div>
+            <div class="progress-list reveal">
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="progress-pct">90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 90%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="progress-pct">85%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 85%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="progress-pct">80%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 80%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fab fa-react"></i> React</span>
+                        <span class="progress-pct">70%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 70%"></div></div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="progress-pct">75%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" style="--pct: 75%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-brand"><span class="brand-dot">&lt;</span>Dev<span class="brand-dot">/&gt;</span></p>
+            <p>&copy; 2026 Mon Portfolio — Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

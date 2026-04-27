@@ -3,66 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Développeur Frontend</title>
+    <title>Portfolio - Développeur Web Fillstack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#work">Mes compétences</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>À propos</h2>
-        <img src="IMG_6719.JPG" alt="Ma photo">
-        <p>Je suis un développeur web frontend passionné par la création d'interfaces modernes et dynamiques.</p>
-    </section> 
-    <section id="work">
-        <h2>Mes Compétences</h2>
-        <ul>
-            <li>Développeur Frontend</li>
-            <li>Développeur d'Application Web</li>
-            <li>Réaction et Création de Contenu</li>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-dot">&lt;</span>Dev<span class="brand-dot">/&gt;</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="about.html" class="nav-link">À propos</a></li>
+            <li><a href="skills.html" class="nav-link">Compétences</a></li>
+            <li><a href="projects.html" class="nav-link">Projets</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projets</h2>
-        <div class="project">
-            <h3>Portfolio</h3>
-            <p class="para">Développement d'un site web pour présenter mon parcour, mes compétences et projets</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Bonjour, je suis</p>
+            <h1 class="hero-name">Développeur <span class="highlight">Frontend</span></h1>
+            <p class="hero-subtitle">Je crée des interfaces web modernes, élégantes et performantes.</p>
+            <div class="hero-btns">
+                <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
+                <a href="contact.html" class="btn btn-outline">Me contacter</a>
+            </div>
+            <div class="hero-scroll">
+                <span>Défiler</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
-        <div class="project">
-            <h3>Site e-commerce</h3>
-            <p class="para">Création d'un Site Vitrine pour la promotion d'un Article cosmétique.
-                Création d'un Site Boutique pour une marque de vêtement et autres articles
-            </p>
+        <div class="hero-bg">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
         </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <label for="name">Nom:</label>
-            <input type="text" id="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Mon Portfolio</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-brand"><span class="brand-dot">&lt;</span>Dev<span class="brand-dot">/&gt;</span></p>
+            <p>&copy; 2026 Mon Portfolio — Tous droits réservés</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos — Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-brand">
+            <a href="index.html"><span class="brand-dot">&lt;</span>Dev<span class="brand-dot">/&gt;</span></a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="nav-link">Accueil</a></li>
+            <li><a href="about.html" class="nav-link active">À propos</a></li>
+            <li><a href="skills.html" class="nav-link">Compétences</a></li>
+            <li><a href="projects.html" class="nav-link">Projets</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <span class="section-tag">Qui suis-je ?</span>
+            <h1 class="page-hero-title">À propos <span class="highlight">de moi</span></h1>
+            <p class="page-hero-sub">Développeur passionné par les interfaces modernes et l'expérience utilisateur.</p>
+        </div>
+        <div class="hero-bg">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img-wrapper reveal">
+                    <img src="IMG_6719.JPG" alt="Photo de profil" class="about-img">
+                    <div class="about-img-decoration"></div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>Développeur Frontend passionné</h3>
+                    <p>Je suis un développeur web frontend passionné par la création d'interfaces modernes et dynamiques. Je conçois des expériences utilisateur intuitives et des sites web qui allient esthétique et performance.</p>
+                    <p style="margin-top: -16px;">Toujours à l'affût des nouvelles tendances du web, j'aime combiner créativité et rigueur technique pour livrer des produits de qualité.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfaction client</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">Travaillons ensemble</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Mon parcours</span>
+                <h2 class="section-title">Expérience & Formation</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 — Présent</span>
+                        <h3>Développeur Frontend</h3>
+                        <p>Conception et développement d'interfaces web modernes, performantes et responsives pour divers clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"><i class="fas fa-laptop-code"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Développement d'applications web</h3>
+                        <p>Réalisation de projets web full-stack avec gestion d'API et intégration de bases de données.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 — 2023</span>
+                        <h3>Formation Développement Web</h3>
+                        <p>Apprentissage des fondamentaux du développement web : HTML, CSS, JavaScript, et frameworks modernes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-brand"><span class="brand-dot">&lt;</span>Dev<span class="brand-dot">/&gt;</span></p>
+            <p>&copy; 2026 Mon Portfolio — Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
