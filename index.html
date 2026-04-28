@@ -32,19 +32,64 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
-        <div class="hero-content">
-            <p class="hero-greeting">Bonjour, je suis</p>
-            <h1 class="hero-name">Développeur <span class="highlight">Full-Stack</span></h1>
-            <p class="hero-subtitle">Je crée des interfaces web modernes, élégantes et performantes.</p>
-            <div class="hero-btns">
-                <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
-                <a href="contact.html" class="btn btn-outline">Me contacter</a>
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+        <div class="hero-inner">
+            <!-- Left: text content -->
+            <div class="hero-content">
+                <p class="hero-greeting">Bonjour, je suis</p>
+                <h1 class="hero-name">Développeur <span class="highlight">Full-Stack</span></h1>
+                <p class="hero-subtitle">
+                    <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+                </p>
+                <div class="hero-btns">
+                    <a href="projects.html" class="btn btn-primary">Voir mes projets</a>
+                    <a href="contact.html" class="btn btn-outline">Me contacter</a>
+                </div>
+                <div class="hero-scroll">
+                    <span>Défiler</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </div>
-            <div class="hero-scroll">
-                <span>Défiler</span>
-                <i class="fas fa-chevron-down"></i>
+
+            <!-- Right: animated code window + floating tech badges -->
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-window-bar">
+                        <span class="cw-dot cw-red"></span>
+                        <span class="cw-dot cw-yellow"></span>
+                        <span class="cw-dot cw-green"></span>
+                        <span class="cw-filename">portfolio.jsx</span>
+                    </div>
+                    <div class="code-window-body">
+                        <div class="code-line" style="--d:0.3s"><span class="ct-kw">const</span> <span class="ct-fn">Portfolio</span> <span class="ct-op">=</span> <span class="ct-kw">()</span> <span class="ct-op">=&gt;</span> <span class="ct-br">{</span></div>
+                        <div class="code-line" style="--d:0.6s">&nbsp;&nbsp;<span class="ct-kw">const</span> <span class="ct-var">skills</span> <span class="ct-op">=</span> <span class="ct-br">[</span></div>
+                        <div class="code-line" style="--d:0.9s">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ct-str">'React'</span><span class="ct-op">,</span> <span class="ct-str">'Node.js'</span><span class="ct-op">,</span></div>
+                        <div class="code-line" style="--d:1.2s">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ct-str">'JavaScript'</span><span class="ct-op">,</span></div>
+                        <div class="code-line" style="--d:1.5s">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ct-str">'Mobile'</span><span class="ct-op">,</span> <span class="ct-str">'SQL'</span></div>
+                        <div class="code-line" style="--d:1.8s">&nbsp;&nbsp;<span class="ct-br">]</span><span class="ct-op">;</span></div>
+                        <div class="code-line" style="--d:2.1s">&nbsp;&nbsp;<span class="ct-kw">return</span> <span class="ct-br">(</span></div>
+                        <div class="code-line" style="--d:2.4s">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ct-tag">&lt;<span class="ct-tagname">App</span></span></div>
+                        <div class="code-line" style="--d:2.7s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ct-attr">passion</span><span class="ct-op">=</span><span class="ct-br">{</span><span class="ct-bool">true</span><span class="ct-br">}</span></div>
+                        <div class="code-line" style="--d:3.0s">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ct-attr">skills</span><span class="ct-op">=</span><span class="ct-br">{</span><span class="ct-var">skills</span><span class="ct-br">}</span></div>
+                        <div class="code-line" style="--d:3.3s">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ct-tag">/&gt;</span></div>
+                        <div class="code-line" style="--d:3.6s">&nbsp;&nbsp;<span class="ct-br">)</span><span class="ct-op">;</span></div>
+                        <div class="code-line" style="--d:3.9s"><span class="ct-br">}</span><span class="ct-op">;</span></div>
+                        <div class="code-line" style="--d:4.2s"><span class="code-blink">▋</span></div>
+                    </div>
+                </div>
+
+                <!-- Floating tech badges -->
+                <div class="tech-badge tb-html"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                <div class="tech-badge tb-css"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="tech-badge tb-js"><i class="fab fa-js"></i><span>JS</span></div>
+                <div class="tech-badge tb-react"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="tech-badge tb-node"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                <div class="tech-badge tb-mobile"><i class="fas fa-mobile-alt"></i><span>Mobile</span></div>
+                <div class="tech-badge tb-git"><i class="fab fa-git-alt"></i><span>Git</span></div>
             </div>
         </div>
+
         <div class="hero-bg">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>

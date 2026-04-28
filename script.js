@@ -239,3 +239,99 @@ function initAIChat() {
 }
 
 initAIChat();
+
+// ========== Hero Canvas — Floating Code Particles ==========
+(function () {
+    const canvas = document.getElementById('hero-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const symbols = ['</>', '{ }', '()', '=>', '[]', '&&', '||', '++', 'fn()', '::', '<div>', 'npm', 'git', 'API', 'CSS', 'jsx'];
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    class Particle {
+        constructor(spreadY) {
+            this.init(spreadY);
+        }
+        init(spreadY) {
+            this.x = Math.random() * canvas.width;
+            this.y = spreadY ? Math.random() * canvas.height : canvas.height + 20;
+            this.symbol = symbols[Math.floor(Math.random() * symbols.length)];
+            this.size = 9 + Math.random() * 7;
+            this.vy = -(0.22 + Math.random() * 0.42);
+            this.vx = (Math.random() - 0.5) * 0.18;
+            this.opacity = 0;
+            this.maxOpacity = 0.055 + Math.random() * 0.085;
+            this.color = Math.random() > 0.6 ? '#a78bfa' : '#7c3aed';
+        }
+        update() {
+            this.y += this.vy;
+            this.x += this.vx;
+            if (this.opacity < this.maxOpacity) this.opacity += 0.0008;
+            if (this.y < -20) this.init(false);
+        }
+        draw() {
+            ctx.globalAlpha = this.opacity;
+            ctx.fillStyle = this.color;
+            ctx.font = `${this.size}px 'Courier New', monospace`;
+            ctx.fillText(this.symbol, this.x, this.y);
+        }
+    }
+
+    const particles = [];
+    for (let i = 0; i < 45; i++) particles.push(new Particle(true));
+
+    function loop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => { p.update(); p.draw(); });
+        ctx.globalAlpha = 1;
+        requestAnimationFrame(loop);
+    }
+    loop();
+})();
+
+// ========== Typewriter Effect ==========
+(function () {
+    const el = document.getElementById('typewriter');
+    if (!el) return;
+
+    const phrases = [
+        'Je crée des interfaces web modernes et performantes.',
+        'Passionné par le développement Full-Stack & Mobile.',
+        'Des solutions numériques sur mesure, de A à Z.',
+        'React · Node.js · JavaScript · Mobile Dev.'
+    ];
+
+    let idx = 0, char = 0, deleting = false, wait = 80;
+
+    function tick() {
+        const phrase = phrases[idx];
+        if (deleting) {
+            el.textContent = phrase.substring(0, char - 1);
+            char--;
+            wait = 38;
+        } else {
+            el.textContent = phrase.substring(0, char + 1);
+            char++;
+            wait = 75;
+        }
+
+        if (!deleting && char === phrase.length) {
+            deleting = true;
+            wait = 2000;
+        } else if (deleting && char === 0) {
+            deleting = false;
+            idx = (idx + 1) % phrases.length;
+            wait = 380;
+        }
+
+        setTimeout(tick, wait);
+    }
+
+    setTimeout(tick, 900);
+})();
