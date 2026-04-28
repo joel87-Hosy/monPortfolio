@@ -1236,9 +1236,42 @@ img {
         padding: 70px 0;
     }
 
-    .hero-visual {
-        display: none;
+    .hero-inner {
+        gap: 32px;
+        padding: 110px 16px 50px;
     }
+
+    .hero-visual {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .code-window {
+        width: 100%;
+        font-size: 0.72rem;
+    }
+
+    .code-window-body {
+        padding: 12px 14px 16px;
+        font-size: 0.72rem;
+    }
+
+    /* Badges visibles mais plus petits et repositionnés */
+    .tech-badge {
+        padding: 6px 10px 6px 9px;
+        font-size: 0.68rem;
+        gap: 5px;
+    }
+    .tech-badge i { font-size: 0.82rem; }
+
+    .tb-git, .tb-mobile, .tb-node { display: none; }
+
+    .tb-html  { top: -14px; left: -4px; }
+    .tb-css   { top: -14px; right: -4px; left: auto; }
+    .tb-js    { bottom: -12px; right: 8px; }
+    .tb-react { bottom: -12px; left: 8px; }
 
     .hero-btns {
         flex-direction: column;
